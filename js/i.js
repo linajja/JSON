@@ -710,18 +710,56 @@
 
 // //5
 
-function randomNumber(min, max) {
-    return Math.round(Math.random() * (max - min) + min) % 2 === 0;
+// function randomNumber(min, max) {
+//     let formule = Math.floor(Math.random() * (max - min) + min)
+//     if (formule % 2 === 0)
+//         return formule;
+//     else
+//         return " ";
+// }
+
+// let kiek = +prompt("Kiek atspausdinti?");
+// let min = +prompt("Min");
+// let max = +prompt("Max");
+// let ats = "Gauta: ";
+
+
+// for (let i = 0; i < kiek; i++) {
+//     ats = ats + " " + randomNumber(min, max);
+// }
+
+// console.log("Ivesta: " + kiek);
+// console.log(ats);
+
+//5-1
+
+// function isEven(sk) {
+//     return sk % 2 === 0
+// }
+
+// let min = 30;
+// let max = 40;
+// let ats = "Gauta: ";
+// let sk = min;
+
+// for (let i = min; i < max; i++) {
+//     if (isEven(sk++) === false)
+//         ats += " " + sk;
+// }
+// console.log("Ivesta: " + min, max);
+// console.log(ats);
+
+//6
+
+function randomNumber() {
+    return (Math.random().toFixed(2));
 }
 
-let kiek = +prompt("Kiek atspausdinti?");
-let min = +prompt("Min");
-let max = +prompt("Max");
-
+let kiek = 5;
+let arr = [];
 for (let i = 0; i < kiek; i++) {
-    console.log(randomNumber(min, max));
+    arr.push(randomNumber());
 }
-
-
-
+console.log("Įvesta: " + kiek);
+console.log("Gauta: " + arr);
 
