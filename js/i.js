@@ -4,6 +4,7 @@
 //     return Math.floor(Math.random() * (max - min + 1) + min);
 // }
 
+//---------------------FOR AND WHILE DO---------------------
 //1
 
 // for (let i = 0; i < 3; i++) {
@@ -177,113 +178,6 @@
 // for (let i = 19; i >= 0; i--) {
 //     console.log(i);
 // }
-
-
-// 4
-
-// let cats = ['Murka', 'Pilkis', 'Keris', 'Ūkas', 'Rainis', 'Pilkis', 'Murka', 'Pilkis'];
-// let kiek = 0;
-
-// for (let i = 0; i < cats.length; i++) {
-//     if (cats[i] === "Pilkis") {
-//         kiek++;
-//     }
-// }
-// console.log(kiek);
-
-// 5
-
-// let cats = ['Murka', 'Pilkis', 'Keris', 'Ūkas', 'Rainis', 'Pilkis', 'Murka', 'Pilkis'];
-// let kiek = 0;
-
-// for (let i = 0; i < cats.length; i++) {
-//     if (cats[i] === "Murka") {
-//         console.log(cats[i] + " " + i)
-//     }
-// }
-
-// 6
-
-// let cats = ['Murka', 'Pilkis', 'Keris', 'Ūkas', 'Rainis', 'Pilkis', 'Murka', 'Pilkis'];
-
-// for (let i = 0; i < cats.length; i++) {
-//     if (cats[i] === "Pilkis") {
-//         cats[i] = "Zita";
-//     }
-// }
-// console.table(cats);
-
-// 7
-
-// let namukas = [];
-// namukas[0] = "Bebras";
-// namukas[1] = "Barsukas";
-// namukas.push("Bebras");
-// namukas.push("Barsukas");
-
-// console.log(namukas);
-
-// 8
-
-// let namukas = [];
-// for (let i = 0; i < 10; i++) {
-//     namukas.push("Zita");
-// }
-// console.log(namukas);
-
-// 9
-
-// let namukas = [];
-
-// for (let i = 0; i < 10; i++) {
-//     let sk = rand(11, 21);
-//     namukas.push(sk);
-// }
-// console.log(namukas);
-
-// let kiek = 0;
-// for (let y = 0; y < namukas.length; y++) {
-//     if (namukas[y] > 15) {
-//         kiek++;
-//     }
-// }
-// console.log(kiek);
-
-// for (let x = 0; x < namukas.length; x++) {
-
-//     let maxim = Math.max(sk);
-// }
-// console.log(maxim);
-
-
-// let didSk = namukas[0];
-
-// for (let z = 1; z < namukas.length; z++) {
-//     if (namukas[z] > didSk) {
-//         didSk = namukas[z];
-//     }
-// }
-// console.log(didSk);
-
-
-// //////////////////////////
-
-// let maxValue;
-// let maxValueIndexes = [];
-
-// maxValue = namukas[0];
-// maxValueIndexes.push(0);
-
-// for (let i = 1; i < namukas.length; i++) {
-//     if (namukas[i] > maxValue) {
-//         maxValue = namukas[i];
-//         maxValueIndexes = [];
-//     }
-//     if (namukas[i] == maxValue) {
-//         maxValueIndexes.push(i);
-//     }
-// }
-// console.log(maxValue, maxValueIndexes);
 
 // 1
 
@@ -492,6 +386,112 @@
 // }
 // console.log(times, it);
 
+//----------------------------------------MASYVAI---------------------------------
+
+// 4
+
+// let cats = ['Murka', 'Pilkis', 'Keris', 'Ūkas', 'Rainis', 'Pilkis', 'Murka', 'Pilkis'];
+// let kiek = 0;
+
+// for (let i = 0; i < cats.length; i++) {
+//     if (cats[i] === "Pilkis") {
+//         kiek++;
+//     }
+// }
+// console.log(kiek);
+
+// 5
+
+// let cats = ['Murka', 'Pilkis', 'Keris', 'Ūkas', 'Rainis', 'Pilkis', 'Murka', 'Pilkis'];
+// let kiek = 0;
+
+// for (let i = 0; i < cats.length; i++) {
+//     if (cats[i] === "Murka") {
+//         console.log(cats[i] + " " + i)
+//     }
+// }
+
+// 6
+
+// let cats = ['Murka', 'Pilkis', 'Keris', 'Ūkas', 'Rainis', 'Pilkis', 'Murka', 'Pilkis'];
+
+// for (let i = 0; i < cats.length; i++) {
+//     if (cats[i] === "Pilkis") {
+//         cats[i] = "Zita";
+//     }
+// }
+// console.table(cats);
+
+//----------------------------------MASYVAI PUSH-----------------------------
+// 7
+
+// let namukas = [];
+// namukas[0] = "Bebras";
+// namukas[1] = "Barsukas";
+// namukas.push("Bebras");
+// namukas.push("Barsukas");
+
+// console.log(namukas);
+
+// 8
+
+// let namukas = [];
+// for (let i = 0; i < 10; i++) {
+//     namukas.push("Zita");
+// }
+// console.log(namukas);
+
+// 9
+
+// let namukas = [];
+
+// for (let i = 0; i < 10; i++) {
+//     let sk = rand(11, 21);
+//     namukas.push(sk);
+// }
+// console.log(namukas);
+
+// let kiek = 0;
+// for (let y = 0; y < namukas.length; y++) {
+//     if (namukas[y] > 15) {
+//         kiek++;
+//     }
+// }
+// console.log(kiek);
+
+// for (let x = 0; x < namukas.length; x++) {
+
+//     let maxim = Math.max(sk);
+// }
+// console.log(maxim);
+
+
+// let didSk = namukas[0];
+
+// for (let z = 1; z < namukas.length; z++) {
+//     if (namukas[z] > didSk) {
+//         didSk = namukas[z];
+//     }
+// }
+// console.log(didSk);
+
+
+// let maxValue;
+// let maxValueIndexes = [];
+
+// maxValue = namukas[0];
+// maxValueIndexes.push(0);
+
+// for (let i = 1; i < namukas.length; i++) {
+//     if (namukas[i] > maxValue) {
+//         maxValue = namukas[i];
+//         maxValueIndexes = [];
+//     }
+//     if (namukas[i] == maxValue) {
+//         maxValueIndexes.push(i);
+//     }
+// }
+// console.log(maxValue, maxValueIndexes);
 
 
 // let namas = [];
@@ -509,6 +509,9 @@
 //     let sk = -5;
 //     namas.push(sk);
 // }
+
+//-----------------------------------UNSHIFT, SHIFT, SPLICE---------------------------
+
 // for (let i = 0; i < 5; i++) {
 //     let sk = -10;
 //     namas.unshift(sk);
@@ -529,6 +532,8 @@
 //     }
 // }
 // console.table(namas);
+
+//-------------------------------FUNKCIJOS----------------------------------------
 
 //1
 
@@ -596,6 +601,7 @@
 // }
 // console.log(trikPlot(plot));
 
+//------------------------------FUNKCIJOS IR MASYVAI----------------------
 
 //7-1
 
@@ -667,7 +673,7 @@
 
 // console.log(comp(pirmas, antras));
 
-// //11 
+// //11
 
 // // function isEmpty(string) {
 // //     return string === "";
@@ -751,15 +757,15 @@
 
 //6
 
-function randomNumber() {
-    return (Math.random().toFixed(2));
-}
+// function randomNumber() {
+//     return (Math.random().toFixed(2));
+// }
 
-let kiek = 5;
-let arr = [];
-for (let i = 0; i < kiek; i++) {
-    arr.push(randomNumber());
-}
-console.log("Įvesta: " + kiek);
-console.log("Gauta: " + arr);
+// let kiek = 5;
+// let arr = [];
+// for (let i = 0; i < kiek; i++) {
+//     arr.push(randomNumber());
+// }
+// console.log("Įvesta: " + kiek);
+// console.log("Gauta: " + arr);
 
