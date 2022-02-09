@@ -667,7 +667,7 @@
 
 // console.log(comp(pirmas, antras));
 
-// //11 
+// //11
 
 // // function isEmpty(string) {
 // //     return string === "";
@@ -710,18 +710,32 @@
 
 // //5
 
-function randomNumber(min, max) {
-    return Math.round(Math.random() * (max - min) + min) % 2 === 0;
-}
+// function randomNumber(min, max) {
+//     return Math.round(Math.random() * (max - min) + min) % 2 === 0;
+// }
 
-let kiek = +prompt("Kiek atspausdinti?");
-let min = +prompt("Min");
-let max = +prompt("Max");
+// let kiek = +prompt("Kiek atspausdinti?");
+// let min = +prompt("Min");
+// let max = +prompt("Max");
 
-for (let i = 0; i < kiek; i++) {
-    console.log(randomNumber(min, max));
-}
+// for (let i = 0; i < kiek; i++) {
+//     console.log(randomNumber(min, max));
+// }
 
+//5
 
+// function isEven(sk) {
+//     return sk % 2 === 0;
+// }
 
+// let min = 30;
+// let max = 40;
+// let ats = "Gauta: ";
+
+// for (let i = min; i < max; i++) {
+//     if (isEven(i++)) {
+//         ats += " " + i;
+//     }
+//     console.log("Ivesta: " + min, max);
+//     console.log(ats);
 
