@@ -8,92 +8,88 @@
     <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
     <style>
-        .main {
-            display: inline-block;
-            border-style: solid;
-            border-color: green;
-            width: 600px;
-            height: 500px;
-            margin-top: 15px;
-            margin-left: 15px;
+        body {
+            height: 100vh;
+            transition: 0.5s;
+        }
 
+        .visible {
+            display: none;
+        }
+
+        img {
+            height: 100px;
+        }
+
+        form {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 400px;
+            margin: 15px;
+            border: 1px solid yellowgreen;
+        }
+
+        .margin {
+            margin: 10px;
+        }
+
+        input {
+            width: 250px;
         }
 
         .btn {
-            margin-top: 15px;
-            margin-left: 15px;
-        }
-
-        .h {
-            margin-top: 15px;
-            margin-left: 15px;
-            font-size: 15px;
-        }
-
-        .all {
-            display: flex;
-            flex-direction: column;
-            margin-top: 20px;
-        }
-
-        .img {
-            display: flex;
-            justify-content: start;
-            margin-top: 20px;
-            size: 100%;
-        }
-
-        .img1 {
-            display: none;
-            justify-content: start;
-            margin-top: 20px;
-            size: 100%;
-        }
-
-        .text {
-            margin-top: 15px;
-            margin-left: 15px;
+            color: #fff;
+            padding: 10px 30px;
+            background-color: #417241;
+            border: 2px solid #bebe03;
+            border-radius: 5px;
         }
     </style>
 </head>
 
-<body>
-    <main>
-        <div class="main">
-            <div class="h">
-                <h>Keisti paveikslėlio poziciją</h>
-            </div>
-            <div>
-                <button id="1" class="btn">Kairėje</button>
-                <button id="2" class="btn">Dešinėje</button>
-                <button id="3" class="btn">Paslėpti</button>
-                <button id="4" class="btn">Nukelti po pastraipomis</button>
-                <button id="5" class="btn">Atstatyti</button>
-            </div>
-            <div class="all">
-                <div1 class="img">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png" alt="Paveikslėlis">
-                </div1>
-                <div class="text">
-                    <div>
-                        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque at distinctio atque voluptatibus autem sit asperiores, voluptatum impedit assumenda dignissimos.</p>
-                    </div>
-                    <div>
-                        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque at distinctio atque voluptatibus autem sit asperiores, voluptatum impedit assumenda dignissimos.</p>
-                    </div>
-                    <div>
-                        <p class="p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque at distinctio atque voluptatibus autem sit asperiores, voluptatum impedit assumenda dignissimos.</p>
-                    </div>
-                    <div2 class="img1">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/130px-HTML5_logo_and_wordmark.svg.png" alt="Paveikslėlis">
-                    </div2>
-                </div>
-            </div>
+<body class="body" id="body">
+    <form name="forma1">
+        <div class="margin">
+            Suskaičiuok:
         </div>
+        <div>
+            <input class="margin" type="number" name="number1">
         </div>
-    </main>
-    <script id="3" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <div>
+            +
+        </div>
+        <div>
+            <input class="margin" type="number" name="number2">
+        </div>
+        <button class="margin btn" type="submit">
+            Submit
+        </button>
+
+    </form>
+
+    <form name="forma">
+        <div class="margin">
+            KMI skaičiuoklė:
+        </div>
+        <p>
+            Įveskite savo ūgis, cm:
+        </p>
+        <input class="margin" type="number" name="ugis" min="150" max="250">
+        <p>
+            Įveskite savo svorį, kg:
+        </p>
+        <input class="margin" type="number" name="svoris" min="18" max="500">
+        <button class="margin btn" type="submit">
+            Skaičiuoti
+        </button>
+
+    </form>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="js/DOM.js"></script>
+
 </body>
 
 </html>
