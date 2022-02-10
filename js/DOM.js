@@ -99,15 +99,15 @@
 let btn1 = document.getElementById("1");
 
 btn1.addEventListener("click", function () {
-    let pav = document.querySelector("div1");
-    pav.style.float = "";
+    let pav1 = document.querySelector("div1");
+    pav1.style.justifyContent = "";
 });
 
 let btn2 = document.getElementById("2");
 
 btn2.addEventListener("click", function () {
     let pav = document.querySelector("div1");
-    pav.style.float = "right";
+    pav.style.justifyContent = "end";
 });
 
 let btn3 = document.getElementById("3");
@@ -117,19 +117,23 @@ btn3.addEventListener("click", function () {
     pav.style.display = "none";
 });
 
-let btn4 = document.getElementById("4");
-
-btn4.addEventListener("click", function () {
-    let pav = document.querySelector("div1");
-    pav.classList.toggle("pav");
-});
-
-
-
 let btn5 = document.getElementById("5");
 
 btn5.addEventListener("click", function () {
-    let pav1 = document.querySelector("div1");
-    pav.classList.toggle("pav1");
+    let pav = document.querySelector("div1");
+    let pav4 = document.querySelector("div2");
+    pav.style.display = "";
+    pav.style.justifyContent = "";
+    pav4.style.display = "none";
+});
+
+let btn4 = document.getElementById("4");
+
+btn4.addEventListener("click", function () {
+    let pav4 = document.querySelector("div2");
+    let pav41 = document.querySelector("div1");
+    pav4.style.display = "flex";
+    pav41.style.display = "none";
+
 });
 
