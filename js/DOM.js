@@ -183,7 +183,7 @@
 // });
 
 
-//2
+//SUMA
 
 let result1 = document.createElement("p");
 
@@ -195,11 +195,11 @@ forma1.addEventListener('submit', function (e) {
     let skaicius2 = +forma1["number2"].value;
     let suma = skaicius1 + skaicius2;
     result1.textContent = "Suma yra lygi: " + suma;
-    body.appendChild(result1);
+    h.appendChild(result1);
 });
 
 
-//3
+//KMI
 
 let resultFinal = document.createElement("p");
 

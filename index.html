@@ -30,6 +30,15 @@
             border: 1px solid yellowgreen;
         }
 
+        .forma {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: row;
+            width: 1000px;
+            margin: 15px;
+            border: 1px solid yellowgreen;
+        }
+
         .margin {
             margin: 10px;
         }
@@ -49,34 +58,34 @@
 </head>
 
 <body class="body" id="body">
-    <form name="forma1">
+    <form name="forma1" class="forma">
         <div class="margin">
             Suskaičiuok:
         </div>
         <div>
             <input class="margin" type="number" name="number1">
         </div>
-        <div>
+        <div class="margin">
             +
         </div>
         <div>
             <input class="margin" type="number" name="number2">
         </div>
-        <button class="margin btn" type="submit">
-            Submit
-        </button>
 
+        <button class="margin btn" type="submit">
+            =
+        </button>
     </form>
 
     <form name="forma">
         <div class="margin">
             KMI skaičiuoklė:
         </div>
-        <p>
+        <p class="margin">
             Įveskite savo ūgis, cm:
         </p>
         <input class="margin" type="number" name="ugis" min="150" max="250">
-        <p>
+        <p class="margin">
             Įveskite savo svorį, kg:
         </p>
         <input class="margin" type="number" name="svoris" min="18" max="500">
