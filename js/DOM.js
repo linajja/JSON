@@ -1,28 +1,58 @@
 
-let resultFinal = document.createElement("p");
+// let forma2 = document.querySelector("form");
+// let visasSarasas = document.querySelector("ul");
+// let input = document.querySelector("input")
 
-let forma = document.forms["forma"];
+// forma2.addEventListener("submit", function (e) {
+//     e.preventDefault();
+//     let info = e.target.elements.info.value;
+//     let sarasas = document.createElement("li")
+//     sarasas.textContent = info;
+//     visasSarasas.appendChild(sarasas);
+// });
 
-function getKMI(num1, num2) {
-    return (num2 / ((num1 * num1) / 10000));
-}
-function info(num) {
-    if (num < 18) {
-        return "Svoris nepakankamas";
-    } else if (num >= 18, 5 && num < 25) {
-        return "Svoris normalus";
-    } else if (num >= 25 && num < 30) {
-        return "Antsvoris";
-    } else (num > 30)
-    return "Nutukimas";
-}
+// input.addEventListener("focus", function (e) {
+//     e.target.style.background = "blue";
+// });
+
+// visasSarasas.addEventListener("blur", function (e) {
+//     e.target.style.background = "";
+// });
 
 
-forma.addEventListener("submit", function (e) {
-    e.preventDefault();
-    let ugis = +e.target.elements.ugis.value;
-    let svoris = +e.target.elements.svoris.value;
-    let result = getKMI(ugis, svoris).toFixed(2);
-    resultFinal.textContent = "Jūsų KMI yra " + result + " . " + info(result);
-    body.appendChild(resultFinal);
+// let laikai = document.getElementById("metuLaikai");
+// let body = document.querySelector("body");
+
+// // laikai.addEventListener("change", function (e) {
+// //     let value = laikai.value;
+// //     if (value === "ruduo") {
+// //         body.style.backgroundImage = 'url("./img/ruduo.jpg")';
+// //     } else if (value === "vasara") {
+// //         body.style.backgroundImage = 'url("./img/vasara.jpg")';
+// //     } else if (value === "ziema") {
+// //         body.style.backgroundImage = 'url("./img/ziema.jpg")';
+// //     } else {
+// //         body.style.backgroundImage = 'url("./img/pavasaris.jpg")';
+// //     }
+// // });
+
+// laikai.addEventListener("change", function (e) {
+//     let value = laikai.value;
+//     body.style.backgroundImage = 'url("./img/' + value + '.jpg")';
+// });
+
+let fotoGal = document.getElementsByClassName("all")[0];
+let bigImg = document.getElementById("one");
+let p = document.querySelector("p");
+
+fotoGal.addEventListener("click", function (e) {
+    console.log(e.target.currentSrc);
+    let src = e.target.currentSrc;
+    console.log(e.target.alt);
+    let alt = e.target.alt;
+    bigImg.setAttribute("src", src);
+    p.textContent = alt;
 });
+
+
+
