@@ -10,8 +10,10 @@
     <style>
         body {
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            gap: 20px;
             height: 100vh;
         }
 
@@ -22,7 +24,7 @@
         .img-text {
             position: absolute;
             color: black;
-            bottom: 10px;
+            bottom: 100px;
             width: 100%;
             text-align: center;
             font-size: 40px;
@@ -32,9 +34,12 @@
 
 <body>
     <div>
-        <img src="./img/vasara.jpg" alt="vasara">
-        <div class="img-text">Alio</div>
+        <img id="img" src="./img/ruduo.jpg" alt="vasara">
+        <div id="text" class="img-text">Alio</div>
     </div>
+    <button id="btn">
+        Keisti
+    </button>
 
     <script src="js/DOM.js"></script>
 
