@@ -10,104 +10,32 @@
     <style>
         body {
             display: flex;
-            flex-direction: column;
-            gap: 50px;
-            margin-top: 50px;
-        }
-
-        .pav {
-            display: flex;
-            flex-direction: column;
             justify-content: center;
-        }
-
-        .body {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 100px;
-            margin-top: 100px;
+            align-items: center;
             height: 100vh;
         }
 
-        .img {
-            display: flex;
-            flex-direction: column;
-            gap: 150px;
-            height: 300px;
-            width: 300px;
-            background-color: green;
-            background-image: none;
-            background-size: 100%;
+        body>div {
+            position: relative;
         }
 
-        .center {
-
-            margin-left: 100px;
-        }
-
-        .one {
-            display: flex;
-            flex-direction: column;
-            height: 400px;
-            width: 400px;
-
-        }
-
-        .all {
-            display: flex;
-            flex-direction: row;
-            justify-content: left;
-            gap: 20px;
-            height: 100px;
-        }
-
-        .btn {
-            background-color: grey;
-            margin-top: 20px;
-            padding: auto;
-        }
-
-        .forma {
-            display: flex;
-            flex-direction: column;
-
+        .img-text {
+            position: absolute;
+            color: black;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-size: 40px;
         }
     </style>
 </head>
 
 <body>
-    <h class="pav">
-        MEME generatorius
-    </h>
-    <div class="body">
-        <div class="img">
-            <h1 class="center">
-                Viršus
-            </h1>
-            <h2 class="center">
-                Apačia
-            </h2>
-        </div>
-        <form class="forma">
-            <p>
-                Viršutinis tekstas
-            </p>
-            <input class="margin" type="text" name="virsus">
-            <p>
-                Apatinis tekstas
-            </p>
-            <input class="margin" type="text" name="apačia">
-            <p>
-                Nuotraukos URL
-            </p>
-            <input class="margin" type="text" name="url">
-            <button class="btn" type="submit">
-                Generuoti
-            </button>
-        </form>
+    <div>
+        <img src="./img/vasara.jpg" alt="vasara">
+        <div class="img-text">Alio</div>
     </div>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <script src="js/DOM.js"></script>
 
 </body>
